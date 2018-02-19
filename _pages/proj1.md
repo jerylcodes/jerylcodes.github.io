@@ -512,7 +512,7 @@ df1.head(1)
         vertical-align: top;
     }
 </style>
-<table border="1" class="dataframe" width="100%">
+<table border="1" class="dataframe" width="200px">
   <thead>
     <tr style="text-align: right;">
       <th></th>
