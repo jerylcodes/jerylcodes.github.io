@@ -10,7 +10,7 @@ author_profile: true
 # Exploratory Data Analysis (EDA)  
 
 ---
-### Problem statement  
+### Problem Statement  
 
 Your hometown mayor just created a new data analysis team to give policy advice, and the administration recruited _you_ via LinkedIn to join it. Unfortunately, due to budget constraints, for now the "team" is just you...
 
@@ -23,10 +23,10 @@ Also unfortunately, that is the entirety of what you've been told. And the mayor
 
 This project is focused on exploratory data analysis, aka "EDA". EDA is an essential part of the data science analysis pipeline. Using packages such as numpy, pandas, matplotlib and seaborn, data scientists are equipped with an array of tools to visualise data. EDA and visualisation serves as a starting point to analyse any dataset (refer to flow chart below).
 
-<img src="https://i.imgur.com/3hmxSRn.png" align="middle"; height="400" width="500">  
+!()[https://i.imgur.com/3hmxSRn.png]  
 
 Source: Transformation - Building a Data Science Capability  
-https://www.linkedin.com/pulse/transforamtion-building-data-science-capability-simon-jones
+![https://www.linkedin.com/pulse/transforamtion-building-data-science-capability-simon-jones](https://www.linkedin.com/pulse/transforamtion-building-data-science-capability-simon-jones)
 
 <img src="https://i.imgur.com/wLPdKgZ.png" style="float: left; margin: 25px 15px 0px 0px; height: 25px">
 
@@ -233,14 +233,6 @@ ratep.set_title('Frequency distribution of SAT passing rate')
 
 ```
 
-
-
-
-    Text(0.5,1,u'Frequency distribution of SAT passing rate')
-
-
-
-
 ![png](proj1/output_7_1.png)
 
 
@@ -253,14 +245,6 @@ mathp.set(xlabel='SAT Math Scores')
 mathp.set_title('Frequency distribution of SAT Math Scores')
 
 ```
-
-
-
-
-    Text(0.5,1,u'Frequency distribution of SAT Math Scores')
-
-
-
 
 ![png](proj1/output_8_1.png)
 
@@ -275,14 +259,6 @@ verbp.set_title('Frequency distribution of SAT Verbal Scores')
 
 ```
 
-
-
-
-    Text(0.5,1,u'Frequency distribution of SAT Verbal Scores')
-
-
-
-
 ![png](proj1/output_9_1.png)
 
 
@@ -292,19 +268,10 @@ verbp.set_title('Frequency distribution of SAT Verbal Scores')
 ```python
 sns.pairplot(datasat, vars=['Rate', 'Math', 'Verbal'], hue='State')
 ```
-
-
-
-
-    <seaborn.axisgrid.PairGrid at 0x454d09e8>
-
-
-
-
 ![png](proj1/output_11_1.png)
 
 
-## Intepretation of pair plot
+## Interpretation of pair plot
 **1. Rate seems to be negatively correlated with both math and verbal scores.**  
 From plots 2 and 3 in the first row, as scores increase, rate decreases.
 
@@ -325,14 +292,6 @@ From plots (row 2, plot 3 and row 3, plot 2), as either variable increases, the 
 ```python
 datasat[['Verbal','Math']].plot.hist(stacked=True, alpha=0.5,figsize=(12,12), bins=20)
 ```
-
-
-
-
-    <matplotlib.axes._subplots.AxesSubplot at 0x4d3185f8>
-
-
-
 
 ![png](proj1/output_14_1.png)
 
@@ -573,8 +532,8 @@ df1.head(1)
       <th>hallucinogen-frequency</th>
       <th>inhalant-use</th>
       <th>inhalant-frequency</th>
-      <th>pain-releiver-use</th>
-      <th>pain-releiver-frequency</th>
+      <th>pain-reliever-use</th>
+      <th>pain-reliever-frequency</th>
       <th>oxycontin-use</th>
       <th>oxycontin-frequency</th>
       <th>tranquilizer-use</th>
@@ -649,8 +608,8 @@ df1.isnull().sum()
     hallucinogen-frequency     0
     inhalant-use               0
     inhalant-frequency         0
-    pain-releiver-use          0
-    pain-releiver-frequency    0
+    pain-reliever-use          0
+    pain-reliever-frequency    0
     oxycontin-use              0
     oxycontin-frequency        0
     tranquilizer-use           0
@@ -690,8 +649,8 @@ df1.info()
     hallucinogen-frequency     17 non-null float64
     inhalant-use               17 non-null float64
     inhalant-frequency         17 non-null object
-    pain-releiver-use          17 non-null float64
-    pain-releiver-frequency    17 non-null float64
+    pain-reliever-use          17 non-null float64
+    pain-reliever-frequency    17 non-null float64
     oxycontin-use              17 non-null float64
     oxycontin-frequency        17 non-null object
     tranquilizer-use           17 non-null float64
@@ -752,8 +711,8 @@ df1.describe(include='all')
       <th>hallucinogen-frequency</th>
       <th>inhalant-use</th>
       <th>inhalant-frequency</th>
-      <th>pain-releiver-use</th>
-      <th>pain-releiver-frequency</th>
+      <th>pain-reliever-use</th>
+      <th>pain-reliever-frequency</th>
       <th>oxycontin-use</th>
       <th>oxycontin-frequency</th>
       <th>tranquilizer-use</th>
@@ -1127,14 +1086,6 @@ sns.heatmap(df2.corr(), cmap="PiYG", center=0)
 # Heatmap showing use correlations
 ```
 
-
-
-
-    <matplotlib.axes._subplots.AxesSubplot at 0x4d99e7b8>
-
-
-
-
 ![png](proj1/output_29_1.png)
 
 
@@ -1143,14 +1094,6 @@ sns.heatmap(df2.corr(), cmap="PiYG", center=0)
 matplotlib.pyplot.figure(figsize=(10,10))
 sns.heatmap(df3.corr(), cmap="PiYG", center=0)
 ```
-
-
-
-
-    <matplotlib.axes._subplots.AxesSubplot at 0x4dde2208>
-
-
-
 
 ![png](proj1/output_30_1.png)
 
@@ -1169,23 +1112,15 @@ for col in df2.columns:
 f.suptitle('Drug use across age',fontsize = 20)
 f.legend()
 plt.xlabel('age')
-plt.ylabel('useage')
+plt.ylabel('usage')
 ```
-
-
-
-
-    Text(0,0.5,u'useage')
-
-
-
 
 ![png](proj1/output_31_1.png)
 
 
 ## <span style="color:blue">Observations:</span>
 The predominant drugs that are used across all age groups are the following:
-1. Alchohol
+1. Alcohol
 2. Marijuana
 3. Cocaine
 
@@ -1206,14 +1141,6 @@ plt.xlabel('age')
 plt.ylabel('frequency')
 ```
 
-
-
-
-    Text(0,0.5,u'frequency')
-
-
-
-
 ![png](proj1/output_33_1.png)
 
 
@@ -1222,7 +1149,7 @@ Frequency of drug use does not follow a pattern but interestingly there are spik
 
 ### 5.3 Create a testable hypothesis about this data  
 
-Test statistics like t-test may yield simple observations about the data. In this case, t test revealed that mean overal drug use for adolescents is not statistically different from mean drug use of non-adolescents.
+Test statistics like t-test may yield simple observations about the data. In this case, t test revealed that mean overall drug use for adolescents is not statistically different from mean drug use of non-adolescents.
 
 
 ```python
@@ -1250,16 +1177,6 @@ plt.subplots(figsize=(8,8))
 ax = sns.boxplot(x='minor_label', y='mean_use', data=df2)
 ax.set(xticklabels=['Non-minor (>21 y.o.)', 'Minor (<=21 y.o.)'], title='Box Plot of overall drug use')
 ```
-
-
-
-
-    [[Text(0,0,u'Non-minor (>21 y.o.)'), Text(0,0,u'Minor (<=21 y.o.)')],
-     Text(0.5,1,u'Box Plot of overall drug use')]
-
-
-
-
 ![png](proj1/output_37_1.png)
 
 
@@ -1272,22 +1189,14 @@ ax.set(xticklabels=['Non-minor (>21 y.o.)', 'Minor (<=21 y.o.)'], title='Box Plo
 
 Rate does not seem to have outliers since it is a percentage range and most values fall between 1 to 100.
 
-**Definition of outlier: **  
-An outlier is defined to be a value that is 1.5x inter-quartile range away from the first or third quartile.
+### Definition of outlier:  
+An outlier is defined to be a value that is 1.5x interquartile range away from the first or third quartile.
 
 
 ```python
 sns.boxplot(data=datasat)
 # box plot shows that only ver_diff has outliers
 ```
-
-
-
-
-    <matplotlib.axes._subplots.AxesSubplot at 0x380064e0>
-
-
-
 
 ![png](proj1/output_40_1.png)
 
