@@ -92,11 +92,7 @@ analytics:
 author:
   name             : "Jeryl Ong"
   avatar           : "/assets/images/image1.jpeg"
-  bio              : "\"Data, Science and Everything Nice.\" 
-  
-  I am a Junior Data Scientist, documenting my projects through this blog. 
-  
-  Feel free to check it out!"
+  bio              : "\"Data, Science and Everything Nice.\"  I am a Junior Data Scientist, documenting my projects through this blog. Feel free to check it out!"
   location         : "Singapore"
   email            :
   uri              :
