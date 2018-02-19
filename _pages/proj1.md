@@ -9,8 +9,6 @@ author_profile: true
 
 # Exploratory Data Analysis (EDA)  
 
-<br>
-
 ---
 ### Problem statement  
 
