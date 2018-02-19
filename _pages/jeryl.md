@@ -244,7 +244,7 @@ ratep.set_title('Frequency distribution of SAT passing rate')
 
 
 
-![png](output_7_1.png)
+![png](proj1/output_7_1.png)
 
 
 
@@ -265,7 +265,7 @@ mathp.set_title('Frequency distribution of SAT Math Scores')
 
 
 
-![png](output_8_1.png)
+![png](proj1/output_8_1.png)
 
 
 
@@ -286,7 +286,7 @@ verbp.set_title('Frequency distribution of SAT Verbal Scores')
 
 
 
-![png](output_9_1.png)
+![png](proj1/output_9_1.png)
 
 
 ### 2.2 Using seaborn's `pairplot`, show the joint distributions for each of `Rate`, `Math`, and `Verbal`
@@ -304,7 +304,7 @@ sns.pairplot(datasat, vars=['Rate', 'Math', 'Verbal'], hue='State')
 
 
 
-![png](output_11_1.png)
+![png](proj1/output_11_1.png)
 
 
 ## Intepretation of pair plot
@@ -337,7 +337,7 @@ datasat[['Verbal','Math']].plot.hist(stacked=True, alpha=0.5,figsize=(12,12), bi
 
 
 
-![png](output_14_1.png)
+![png](proj1/output_14_1.png)
 
 
 ### 3.2 Plot `Verbal` , `Math` and `Rate` (normalised) on the same chart using boxplots  
@@ -367,7 +367,7 @@ datanormp = datanorm.sort_values(by=['Verbaln','Mathn']).plot(kind='box', y=['Ve
 ```
 
 
-![png](output_17_0.png)
+![png](proj1/output_17_0.png)
 
 
 
@@ -1138,7 +1138,7 @@ sns.heatmap(df2.corr(), cmap="PiYG", center=0)
 
 
 
-![png](output_29_1.png)
+![png](proj1/output_29_1.png)
 
 
 
@@ -1155,7 +1155,7 @@ sns.heatmap(df3.corr(), cmap="PiYG", center=0)
 
 
 
-![png](output_30_1.png)
+![png](proj1/output_30_1.png)
 
 
 
@@ -1183,7 +1183,7 @@ plt.ylabel('useage')
 
 
 
-![png](output_31_1.png)
+![png](proj1/output_31_1.png)
 
 
 ## <span style="color:blue">Observations:</span>
@@ -1217,7 +1217,7 @@ plt.ylabel('frequency')
 
 
 
-![png](output_33_1.png)
+![png](proj1/output_33_1.png)
 
 
 ## <span style="color:blue">Observations:</span>
@@ -1263,7 +1263,7 @@ ax.set(xticklabels=['Non-minor (>21 y.o.)', 'Minor (<=21 y.o.)'], title='Box Plo
 
 
 
-![png](output_37_1.png)
+![png](proj1/output_37_1.png)
 
 
 
@@ -1292,7 +1292,7 @@ sns.boxplot(data=datasat)
 
 
 
-![png](output_40_1.png)
+![png](proj1/output_40_1.png)
 
 
 
