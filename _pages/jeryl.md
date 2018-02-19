@@ -1,3 +1,10 @@
+---
+permalink: /project 01/
+title: "Project 01"
+ads: false
+share: false
+---
+
 
 <img src="https://i.imgur.com/u1otXPC.png" style="float: left; margin: 15px; height: 80px">
 
