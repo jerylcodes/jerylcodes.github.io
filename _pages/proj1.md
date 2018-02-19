@@ -500,12 +500,6 @@ df1.head(1)
 
 <div>
 <style>
-	.dataframe {
-		width: 100%;
-    max-width: 0;
-    word-wrap: break-word;
-    overflow: hidden;
-	}
     .dataframe thead tr:only-child th {
         text-align: right;
     }
@@ -518,7 +512,7 @@ df1.head(1)
         vertical-align: top;
     }
 </style>
-<table border="1" class="dataframe">
+<table border="1" class="dataframe" width="100%">
   <thead>
     <tr style="text-align: right;">
       <th></th>
