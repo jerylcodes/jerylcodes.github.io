@@ -1,6 +1,8 @@
+---
 layout: single
 permalink: /proj1/
 title: &title "Project 1"
+---
 
 <img src="https://i.imgur.com/u1otXPC.png" style="float: left; margin: 15px; height: 80px">
 <br>
