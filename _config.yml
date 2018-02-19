@@ -91,7 +91,7 @@ analytics:
 # Site Author
 author:
   name             : "Jeryl Ong"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/image1.jpeg"
   bio              : "NUS Life Science graduate with 1.5 years data experience in the Ministry of Education and Parkway Hospitals. Python coder with statistical and machine learning knowledge; and current Teaching Assistant at General Assembly (Data Science Immersive). A firm believer that “Data is the new Science”, and always open to sharing my ideas."
   location         : "Singapore"
   email            :
