@@ -23,10 +23,10 @@ Also unfortunately, that is the entirety of what you've been told. And the mayor
 
 This project is focused on exploratory data analysis, aka "EDA". EDA is an essential part of the data science analysis pipeline. Using packages such as numpy, pandas, matplotlib and seaborn, data scientists are equipped with an array of tools to visualise data. EDA and visualisation serves as a starting point to analyse any dataset (refer to flow chart below).
 
-!()[https://i.imgur.com/3hmxSRn.png]  
+<img src="https://i.imgur.com/3hmxSRn.png" style="float: center; height: 400px">
 
 Source: Transformation - Building a Data Science Capability  
-![https://www.linkedin.com/pulse/transforamtion-building-data-science-capability-simon-jones](https://www.linkedin.com/pulse/transforamtion-building-data-science-capability-simon-jones)
+[https://www.linkedin.com/pulse/transforamtion-building-data-science-capability-simon-jones](https://www.linkedin.com/pulse/transforamtion-building-data-science-capability-simon-jones)
 
 <img src="https://i.imgur.com/wLPdKgZ.png" style="float: left; margin: 25px 15px 0px 0px; height: 25px">
 
