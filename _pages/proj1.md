@@ -5,10 +5,9 @@ title: &title "Project 1"
 author_profile: true
 ---
 
-<img src="https://i.imgur.com/u1otXPC.png" style="float: left; margin: 15px; height: 80px">
-<br>
+<img src="https://i.imgur.com/u1otXPC.png" style="float: left; height: 80px">
 
-# Project 1: Exploratory Data Analysis (EDA)  
+# Exploratory Data Analysis (EDA)  
 
 <br>
 
