@@ -691,7 +691,7 @@ df1.describe(include='all')
         vertical-align: top;
     }
 </style>
-<table border="1" class="dataframe" width=100%>
+<table border="1" class="dataframe" width="100%">
   <thead>
     <tr style="text-align: right;">
       <th></th>
