@@ -675,7 +675,7 @@ df1.describe(include='all')
 ```
 ### INSERT TABLE HERE### 
 
- <iframe src="https://jerylcodes.github.io/proj1/table1/" height="200" width="300"></iframe> 
+ <iframe src="https://jerylcodes.github.io/proj1/table1/" height="500" width="500" overflow="auto"></iframe> 
 
 ```python
 df2 = df1.iloc[:,[2,4,6,8,10,12,14,16,18,20,22,24,26]] # Split df1 into use columns
