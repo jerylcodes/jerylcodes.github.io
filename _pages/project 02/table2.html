@@ -1,0 +1,268 @@
+---
+permalink: proj2/table2/
+---
+<html>
+<body>
+
+<div>
+<style>
+    .dataframe thead tr:only-child th {
+        text-align: right;
+    }
+
+    .dataframe thead th {
+        text-align: left;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Fixed characteristics</th>
+      <th>Renovatable characteristics</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>MSSubClass</td>
+      <td>Street</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>MSZoning</td>
+      <td>Alley</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>LotFrontage</td>
+      <td>OverallQual</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>LotArea</td>
+      <td>OverallCond</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>LotShape</td>
+      <td>RoofStyle</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>LandContour</td>
+      <td>RoofMatl</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>Utilities</td>
+      <td>Exterior1st</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>LotConfig</td>
+      <td>Exterior2nd</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>LandSlope</td>
+      <td>MasVnrType</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>Neighborhood</td>
+      <td>ExterQual</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>Condition1</td>
+      <td>ExterCond</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>Condition2</td>
+      <td>Foundation</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>BldgType</td>
+      <td>BsmtQual</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>HouseStyle</td>
+      <td>BsmtCond</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>YearBuilt</td>
+      <td>BsmtExposure</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>YearRemodAdd</td>
+      <td>BsmtFinType1</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>MasVnrArea</td>
+      <td>BsmtFinType2</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>BsmtFinSF1</td>
+      <td>BsmtUnfSF</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>BsmtFinSF2</td>
+      <td>Heating</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>TotalBsmtSF</td>
+      <td>HeatingQC</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>1stFlrSF</td>
+      <td>CentralAir</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>2ndFlrSF</td>
+      <td>Electrical</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>LowQualFinSF</td>
+      <td>KitchenQual</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>GrLivArea</td>
+      <td>Functional</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>BsmtFullBath</td>
+      <td>Fireplaces</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>BsmtHalfBath</td>
+      <td>FireplaceQu</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>FullBath</td>
+      <td>GarageFinish</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>HalfBath</td>
+      <td>GarageQual</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>Bedroom</td>
+      <td>GarageCond</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>Kitchen</td>
+      <td>PavedDrive</td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td>TotRmsAbvGrd</td>
+      <td>PoolQC</td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td>GarageType</td>
+      <td>Fence</td>
+    </tr>
+    <tr>
+      <th>32</th>
+      <td>GarageYrBlt</td>
+      <td>MiscFeature</td>
+    </tr>
+    <tr>
+      <th>33</th>
+      <td>GarageCars</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>34</th>
+      <td>GarageArea</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>35</th>
+      <td>WoodDeckSF</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>36</th>
+      <td>OpenPorchSF</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>37</th>
+      <td>EnclosedPorch</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>38</th>
+      <td>3SsnPorch</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>39</th>
+      <td>ScreenPorch</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>40</th>
+      <td>PoolArea</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>41</th>
+      <td>MiscVal</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>42</th>
+      <td>MoSold</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>43</th>
+      <td>YrSold</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>44</th>
+      <td>SaleType</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>45</th>
+      <td>SaleCondition</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+</body>
+</html>
