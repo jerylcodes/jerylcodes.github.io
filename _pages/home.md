@@ -23,7 +23,7 @@ feature_row:
     url: "/proj2"
     btn_class: "btn--primary"
     btn_label: "Link"
-  - image_path: /assets/images/mm-free-feature.png
+  - image_path: /assets/images/scrape.jpg
     alt: "Web Scraping and NLP"
     title: "Web Scraping and NLP"
     excerpt: "For this project, we will explore web scraping to obtain data from websites. Then, we will make use of Natural Language Processing (NLP) to analyse our text."
