@@ -7,9 +7,7 @@ header:
   cta_label: 
   cta_url: 
   caption: 
-excerpt: 'Jeryl Ong  
-
-<br> \"Data, Science and Everything Nice.\" <br> I am a Junior Data Scientist, documenting my projects through this blog.'
+excerpt: '\"Data, Science and Everything Nice.\" <br>Jeryl Ong <br> A Junior Data Scientist, documenting his projects through this blog.'
 feature_row:
   - image_path: /assets/images/eda.jpg
     alt: "Exploratory Data Analysis"
@@ -28,13 +26,13 @@ feature_row:
   - image_path: /assets/images/scrape.jpg
     alt: "Web Scraping and NLP"
     title: "Project 3: Web Scraping and NLP"
-    excerpt: "For this project, we will explore web scraping to obtain data from websites. Then, we will make use of Natural Language Processing (NLP) to analyse our text."
+    excerpt: "For this project, web scraping will be utilised to obtain data from websites. Following which, Natural Language Processing (NLP) will be used to analyse the text data obtained."
     url: "/proj3"
     btn_class: "btn--primary"
     btn_label: "Link"
 github:
 intro:
-  - excerpt: 'Click on the links below to check out some of my projects:'
+  - excerpt: 'Check out my projects below:'
 ---
 
 {% include feature_row id="intro" type="center" %}

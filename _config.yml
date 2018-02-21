@@ -9,7 +9,7 @@ minimal_mistakes_skin    : "contrast" # "air", "aqua", "contrast", "dark", "dirt
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Data Science Projects"
+title                    : "jerylcodes.github.io"
 title_separator          : "-"
 name                     : "Jeryl Ong"
 description              : "Github Pages to host my Data Science projects."
@@ -93,8 +93,8 @@ author:
   name             : "Jeryl Ong"
   avatar           : "/assets/images/image1.jpeg"
   bio              : "\"Data, Science and Everything Nice.\"  
-  \n\nI am a Junior Data Scientist, documenting my projects through this blog.  
-  \n\nFeel free to check it out!"
+  \n\nA Junior Data Scientist, documenting his projects through this blog.  
+  \n\nFeel free to check them out!"
   location         : "Singapore"
   email            :
   uri              :

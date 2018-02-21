@@ -24,7 +24,7 @@ Data Science often involves modelling and prediction based on a dataset. In this
 
 <img src="https://i.imgur.com/wLPdKgZ.png" style="float: left; margin: 25px 15px 0px 0px; height: 25px">
 
-## 1. Estimating the value of homes from fixed characteristics.
+## 1. Estimating the value of homes from fixed characteristics
 
 ---
 ### 1.1 Overview of dataset using pandas .describe()
@@ -139,7 +139,7 @@ print np.mean(lasso_scores)
 ## 3. Model for regression
 
 ---
-### 3.1 Lasso regression to predict price
+### 3.1 Lasso regression to predict house prices
 The lasso regression applies regularisation to data columns such that certain columns may not be as information to predict your variable of interest. This is particularly useful for datasets with large amounts of qualitative features.
 
 
@@ -323,7 +323,7 @@ lasso_coefs.head(20)
 
 <img src="https://i.imgur.com/wLPdKgZ.png" style="float: left; margin: 25px 15px 0px 0px; height: 25px">
 
-## 4. Classification problem to predict abnormal or normal housing sale
+## 4. Classify records into abnormal or normal sale
 
 ---
 ### 4.1 Caveat: Imbalanced dataset
