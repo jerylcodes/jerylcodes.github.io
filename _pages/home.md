@@ -12,14 +12,14 @@ feature_row:
   - image_path: /assets/images/eda.jpg
     alt: "Exploratory Data Analysis"
     title: "Project 1: Exploratory Data Analysis"
-    excerpt: "This project is focused on exploratory data analysis, aka “EDA”. EDA is an essential part of the data science analysis pipeline.<br> <br>"
+    excerpt: "This project is focused on exploratory data analysis, aka “EDA”. EDA is an essential part of the data science analysis pipeline.<br> <br><br> <br>"
     url: "/proj1"
     btn_class: "btn--primary"
     btn_label: "Link"
   - image_path: /assets/images/regress.jpg
     alt: "Regression and Classification"
     title: "Project 2: Regression and Classification"
-    excerpt: "Data Science often involves modelling and prediction based on a dataset. In this project, techniques such as regression and classification are explored. <br>"
+    excerpt: "Data Science often involves modelling and prediction based on a dataset. In this project, techniques such as regression and classification are explored. <br><br> <br>"
     url: "/proj2"
     btn_class: "btn--primary"
     btn_label: "Link"
