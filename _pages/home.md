@@ -7,7 +7,7 @@ header:
   cta_label: 
   cta_url: 
   caption: 
-excerpt: '\"Data, Science and Everything Nice.\" <br>Jeryl Ong <br> A Junior Data Scientist, documenting his projects through this blog.'
+excerpt: '<br> <br> \"Data, Science and Everything Nice.\" <br>Jeryl Ong <br> A Junior Data Scientist, documenting his projects through this blog.'
 feature_row:
   - image_path: /assets/images/eda.jpg
     alt: "Exploratory Data Analysis"
