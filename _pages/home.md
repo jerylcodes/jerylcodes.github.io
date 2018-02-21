@@ -3,37 +3,36 @@ layout: splash
 permalink: /
 header:
   overlay_color: "#5e616c"
-  overlay_image: "https://i.imgur.com/eJ91gGF.jpg"
-  cta_label: "<i class='fas fa-download'></i> Install Now"
-  cta_url: "/docs/quick-start-guide/"
-  caption:
-excerpt: 'A flexible two-column Jekyll theme. Perfect for personal sites, blogs, and portfolios hosted on GitHub or your own server.<br /> <small><a href="https://github.com/mmistakes/minimal-mistakes/releases/tag/4.10.0">Latest release v4.10.0</a></small><br /><br /> {::nomarkdown}<iframe style="display: inline-block;" src="https://ghbtns.com/github-btn.html?user=mmistakes&repo=minimal-mistakes&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe> <iframe style="display: inline-block;" src="https://ghbtns.com/github-btn.html?user=mmistakes&repo=minimal-mistakes&type=fork&count=true&size=large" frameborder="0" scrolling="0" width="158px" height="30px"></iframe>{:/nomarkdown}'
+  overlay_image: /assets/images/home.jpg
+  cta_label: 
+  cta_url: 
+  caption: 
+excerpt: 'Jeryl Ong - Data Science Projects'
 feature_row:
-  - image_path: /assets/images/mm-customizable-feature.png
-    alt: "customizable"
-    title: "Super Customizable"
-    excerpt: "Everything from the menus, sidebars, comments, and more can be configured or set with YAML Front Matter."
-    url: "/docs/configuration/"
+  - image_path: /assets/images/eda.jpg
+    alt: "Exploratory Data Analysis"
+    title: "Exploratory Data Analysis"
+    excerpt: "This project is focused on exploratory data analysis, aka “EDA”. EDA is an essential part of the data science analysis pipeline."
+    url: "/proj1"
     btn_class: "btn--primary"
-    btn_label: "Learn More"
-  - image_path: /assets/images/mm-responsive-feature.png
-    alt: "fully responsive"
-    title: "Responsive Layouts"
-    excerpt: "Built on HTML5 + CSS3. All layouts are fully responsive with helpers to augment your content."
-    url: "/docs/layouts/"
+    btn_label: "Link"
+  - image_path: /assets/images/regress.jpg
+    alt: "Regression and Classification"
+    title: "Regression and Classification"
+    excerpt: "Data Science often involves modelling and prediction based on a dataset. In this project, techniques such as regression and classification are explored."
+    url: "/proj2"
     btn_class: "btn--primary"
-    btn_label: "Learn More"
+    btn_label: "Link"
   - image_path: /assets/images/mm-free-feature.png
-    alt: "100% free"
-    title: "100% Free"
-    excerpt: "Free to use however you want under the MIT License. Clone it, fork it, customize it, whatever!"
-    url: "/docs/license/"
+    alt: "Web Scraping and NLP"
+    title: "Web Scraping and NLP"
+    excerpt: "For this project, we will explore web scraping to obtain data from websites. Then, we will make use of Natural Language Processing (NLP) to analyse our text."
+    url: "/proj3"
     btn_class: "btn--primary"
-    btn_label: "Learn More"
+    btn_label: "Link"
 github:
-  - excerpt: '{::nomarkdown}<iframe style="display: inline-block;" src="https://ghbtns.com/github-btn.html?user=mmistakes&repo=minimal-mistakes&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe> <iframe style="display: inline-block;" src="https://ghbtns.com/github-btn.html?user=mmistakes&repo=minimal-mistakes&type=fork&count=true&size=large" frameborder="0" scrolling="0" width="158px" height="30px"></iframe>{:/nomarkdown}'
 intro:
-  - excerpt: 'Get notified when I add new stuff &nbsp; [<i class="fab fa-twitter"></i> @mmistakes](https://twitter.com/mmistakes){: .btn .btn--twitter} [<i class="fab fa-paypal"></i> Tip Me](https://www.paypal.me/mmistakes){: .btn .btn--primary}'
+  - excerpt: 'Click on the links below to check out some of my projects:'
 ---
 
 {% include feature_row id="intro" type="center" %}
