@@ -13,7 +13,7 @@ title                    : "Data Science Projects"
 title_separator          : "-"
 name                     : "Jeryl Ong"
 description              : "Github Pages to host my Data Science projects."
-url                      : "https://jerylcodes.github.io/"
+url                      : "https://jerylcodes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # test
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
