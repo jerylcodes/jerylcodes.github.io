@@ -9,6 +9,9 @@ author_profile: true
 ### Regression and Classification with the Ames Housing Data
 
 ---
+
+<img src="/assets/images/proj2.jpg" width="100%">
+
 This project uses the [Ames housing data recently made available on kaggle](https://www.kaggle.com/c/house-prices-advanced-regression-techniques).  
 
 Data Science often involves modelling and prediction based on a dataset. In this project, techniques such as regression and classification are explored. Python packages used for this dataset include: 

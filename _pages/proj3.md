@@ -9,6 +9,9 @@ author_profile: true
 
 ### Web Scraping and Analysis
 ---
+
+<img src="/assets/images/proj3.jpg" width="100%">
+
 For this project, we will explore web scraping to obtain data from websites. More specifically, we will be looking at job search websites to obtain job listings together with job descriptions and salary information. We will next use the information scraped to predict salary or classify jobs according to its description. Classifying jobs according to job description involves analysing textual information. We can make use of scikit learn's natural language processing packages to help us in our analysis. 
 
 Packages used:
