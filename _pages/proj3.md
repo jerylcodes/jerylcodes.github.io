@@ -188,7 +188,7 @@ df_text1 = pd.DataFrame(data=df_text.todense(), columns=vect.get_feature_names()
 df_text1.head(2)
 ```
 
-<iframe src="https://jerylcodes.github.io/proj3/table3/" height="400" width="600" overflow="auto"></iframe> 
+<iframe src="https://jerylcodes.github.io/proj3/table3/" height="200" width="600" overflow="auto"></iframe> 
 
 ### 3.3 Build a logistic regression and random forest classifier to classify the dataset
 __Logistic regression__
