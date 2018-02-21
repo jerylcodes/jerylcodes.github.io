@@ -58,7 +58,7 @@ for link in urllist:
 ```
 <iframe src="https://jerylcodes.github.io/proj3/table1/" height="400" width="600" overflow="auto"></iframe>
 
-## <img src="https://i.imgur.com/wLPdKgZ.png" style="float: left; margin: 25px 15px 0px 0px; height: 25px">  2. Analysing factors that affect salary
+## <img src="https://i.imgur.com/wLPdKgZ.png" style="float: left; height: 25px">  2. Analysing factors that affect salary
 ### 2.1 Generate meaningful features from text using term frequency–inverse document frequency (TFIDF)
 
 Tf-idf stands for term frequency-inverse document frequency, and the tf-idf weight is a weight often used in information retrieval and text mining. This weight is a statistical measure used to evaluate how important a word is to a document in a collection or corpus. The importance increases proportionally to the number of times a word appears in the document but is offset by the frequency of the word in the corpus. Variations of the tf-idf weighting scheme are often used by search engines as a central tool in scoring and ranking a document's relevance given a user query.  
