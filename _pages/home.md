@@ -8,6 +8,7 @@ header:
   cta_url: 
   caption: 
 excerpt: 'Jeryl Ong'
+author_profile: true
 feature_row:
   - image_path: /assets/images/eda.jpg
     alt: "Exploratory Data Analysis"
