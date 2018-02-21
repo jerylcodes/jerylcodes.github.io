@@ -4,6 +4,7 @@ permalink: proj3/
 title: &title "Project 3"
 author_profile: true
 ---
+
 <img src="https://i.imgur.com/iYGFYFv.png" style="float: left; margin: 15px; height: 80px">
 
 ### Web Scraping and Analysis
