@@ -10,6 +10,9 @@ author_profile: true
 # Exploratory Data Analysis (EDA)  
 
 ---
+
+<img src="/assets/images/proj1.jpg" width="100%">
+
 ### Problem Statement  
 
 Your hometown mayor just created a new data analysis team to give policy advice, and the administration recruited _you_ via LinkedIn to join it. Unfortunately, due to budget constraints, for now the "team" is just you...
