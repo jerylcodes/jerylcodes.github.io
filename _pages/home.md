@@ -7,7 +7,7 @@ header:
   cta_label: 
   cta_url: 
   caption: 
-excerpt: '__\"Data, Science and Everything Nice.\"__'
+excerpt: '\"Data, Science and Everything Nice.\"'
 feature_row:
   - image_path: /assets/images/eda.jpg
     alt: "Exploratory Data Analysis"
