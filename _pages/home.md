@@ -8,7 +8,6 @@ header:
   cta_url: 
   caption: 
 excerpt: 'Jeryl Ong'
-author_profile: true
 feature_row:
   - image_path: /assets/images/eda.jpg
     alt: "Exploratory Data Analysis"
@@ -34,6 +33,8 @@ feature_row:
 github:
 intro:
   - excerpt: 'Click on the links below to check out some of my projects:'
+
+author_profile: true
 ---
 
 {% include feature_row id="intro" type="center" %}
