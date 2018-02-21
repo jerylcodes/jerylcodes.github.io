@@ -31,9 +31,7 @@ This project is focused on exploratory data analysis, aka "EDA". EDA is an essen
 Source: Transformation - Building a Data Science Capability  
 [https://www.linkedin.com/pulse/transforamtion-building-data-science-capability-simon-jones](https://www.linkedin.com/pulse/transforamtion-building-data-science-capability-simon-jones)
 
-<img src="https://i.imgur.com/wLPdKgZ.png" style="float: left; margin: 25px 15px 0px 0px; height: 25px">
-
-## 1. Load the `sat_scores.csv` dataset and describe it
+## <img src="https://i.imgur.com/wLPdKgZ.png" style="float: left; height: 25px"> 1. Load the `sat_scores.csv` dataset and describe it
 
 ---
 ### 1.1 Describing dataset using pandas .describe() and .info()
@@ -218,9 +216,7 @@ The sat scores contain 4 columns of information :
 3. Verbal: Verbal Scores in the range of 482 - 593
 4. Math: Math Scores in the range of 439 - 603
 
-<img src="https://i.imgur.com/wLPdKgZ.png" style="float: left; margin: 25px 15px 0px 0px; height: 25px">
-
-## 2. Plot the data using seaborn
+## <img src="https://i.imgur.com/wLPdKgZ.png" style="float: left; height: 25px"> 2. Plot the data using seaborn
 
 ---
 
@@ -283,9 +279,7 @@ From plots (row 2, plot 3 and row 3, plot 2), as either variable increases, the 
 
 **3. Adding hue dimension (assigned to state) may yield interesting information about the clustering of states according to SAT scores.**
 
-<img src="https://i.imgur.com/wLPdKgZ.png" style="float: left; margin: 25px 15px 0px 0px; height: 25px">
-
-## 3. Plot the data using built-in pandas functions.
+## <img src="https://i.imgur.com/wLPdKgZ.png" style="float: left; height: 25px"> 3. Plot the data using built-in pandas functions.
 
 ---
 
@@ -329,9 +323,7 @@ datanormp = datanorm.sort_values(by=['Verbaln','Mathn']).plot(kind='box', y=['Ve
 ![png](proj1/output_17_0.png)
 
 
-
-<img src="https://i.imgur.com/wLPdKgZ.png" style="float: left; margin: 25px 15px 0px 0px; height: 25px">
-## 4. Examine summary statistics
+## <img src="https://i.imgur.com/wLPdKgZ.png" style="float: left; height: 25px"> 4. Examine summary statistics
 ---
 
 Checking the summary statistics! Correlation matrices give a one stop view of how variables are related linearly to each other.
@@ -482,10 +474,7 @@ datasat.cov()
 
 
 
-
-<img src="https://i.imgur.com/wLPdKgZ.png" style="float: left; margin: 25px 15px 0px 0px; height: 25px">
-
-## 5. Performing EDA on "drug use by age" data.
+## <img src="https://i.imgur.com/wLPdKgZ.png" style="float: left; height: 25px"> 5. Performing EDA on "drug use by age" data.
 
 ---
 
@@ -695,10 +684,7 @@ ax.set(xticklabels=['Non-minor (>21 y.o.)', 'Minor (<=21 y.o.)'], title='Box Plo
 ![png](proj1/output_37_1.png)
 
 
-
-<img src="https://i.imgur.com/wLPdKgZ.png" style="float: left; margin: 25px 15px 0px 0px; height: 25px">
-
-## 6. Introduction to dealing with outliers
+## <img src="https://i.imgur.com/wLPdKgZ.png" style="float: left; height: 25px"> 6. Introduction to dealing with outliers
 
 ---
 

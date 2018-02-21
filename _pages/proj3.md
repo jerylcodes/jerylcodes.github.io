@@ -25,9 +25,7 @@ Packages used:
 8. scikit-learn
 9. imblearn
 
-<img src="https://i.imgur.com/wLPdKgZ.png" style="float: left; margin: 25px 15px 0px 0px; height: 25px">
-
-### 1. Getting the links from the job site for scraping using BeautifulSoup and urllib3 
+## <img src="https://i.imgur.com/wLPdKgZ.png" style="float: left; height: 25px"> 1. Getting the links from the job site for scraping using BeautifulSoup and urllib3 
 
 
 ```python
@@ -149,9 +147,7 @@ print("Mean squared error: %.2f"
     Mean squared error: 2702897.93
     
 
-<img src="https://i.imgur.com/wLPdKgZ.png" style="float: left; margin: 25px 15px 0px 0px; height: 25px">
-
-## 3. Classifying data science and non-data science jobs
+## <img src="https://i.imgur.com/wLPdKgZ.png" style="float: left; height: 25px"> 3. Classifying data science and non-data science jobs
 ### 3.1 Generate value counts of job categories
 
 

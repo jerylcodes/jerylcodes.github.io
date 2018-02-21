@@ -22,9 +22,7 @@ Data Science often involves modelling and prediction based on a dataset. In this
 5. scikit-learn
 6. imb-learn
 
-<img src="https://i.imgur.com/wLPdKgZ.png" style="float: left; margin: 25px 15px 0px 0px; height: 25px">
-
-## 1. Estimating the value of homes from fixed characteristics
+## <img src="https://i.imgur.com/wLPdKgZ.png" style="float: left; height: 25px"> 1. Estimating the value of homes from fixed characteristics
 
 ---
 ### 1.1 Overview of dataset using pandas .describe()
@@ -109,10 +107,7 @@ nearZeroVariance(zerovartest)
     ([], ['MasVnrArea', 'PoolArea', 'MiscVal'])
 
 
-
-<img src="https://i.imgur.com/wLPdKgZ.png" style="float: left; margin: 25px 15px 0px 0px; height: 25px">
-
-## 2. Preparing your dataset for prediction/classification
+## <img src="https://i.imgur.com/wLPdKgZ.png" style="float: left; height: 25px"> 2. Preparing your dataset for prediction/classification
 
 ---
 ### 2.1 Train-test split and normalisation
@@ -134,9 +129,7 @@ print np.mean(lasso_scores)
     0.780831973138
     
 
-<img src="https://i.imgur.com/wLPdKgZ.png" style="float: left; margin: 25px 15px 0px 0px; height: 25px">
-
-## 3. Model for regression
+## <img src="https://i.imgur.com/wLPdKgZ.png" style="float: left; height: 25px"> 3. Model for regression
 
 ---
 ### 3.1 Lasso regression to predict house prices
@@ -319,11 +312,7 @@ lasso_coefs.head(20)
 </table>
 </div>
 
-
-
-<img src="https://i.imgur.com/wLPdKgZ.png" style="float: left; margin: 25px 15px 0px 0px; height: 25px">
-
-## 4. Classify records into abnormal or normal sale
+## <img src="https://i.imgur.com/wLPdKgZ.png" style="float: left; height: 25px"> 4. Classify records into abnormal or normal sale
 
 ---
 ### 4.1 Caveat: Imbalanced dataset
