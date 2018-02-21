@@ -74,7 +74,7 @@ textvec = vect.fit_transform(X['full_description'])
 
 __Example of features after tf-idf__
 
-<iframe src="https://jerylcodes.github.io/proj3/table2/" height="400" width="600" overflow="auto"></iframe> 
+<iframe src="https://jerylcodes.github.io/proj3/table2/" height="200" width="600" overflow="auto"></iframe> 
 
 ### 2.2 Principal Component Analysis (PCA)  
 
