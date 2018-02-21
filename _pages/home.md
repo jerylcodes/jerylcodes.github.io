@@ -9,7 +9,7 @@ header:
   caption: 
 excerpt: 'Jeryl Ong  
 
-\"Data, Science and Everything Nice.\" <br> I am a Junior Data Scientist, documenting my projects through this blog.'
+<br> \"Data, Science and Everything Nice.\" <br> I am a Junior Data Scientist, documenting my projects through this blog.'
 feature_row:
   - image_path: /assets/images/eda.jpg
     alt: "Exploratory Data Analysis"
