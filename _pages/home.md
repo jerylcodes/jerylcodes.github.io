@@ -32,7 +32,6 @@ feature_row:
     btn_label: "Link"
 github:
 intro:
-  - excerpt: 'Check out my projects below:'
 ---
 
 {% include feature_row id="intro" type="center" %}
