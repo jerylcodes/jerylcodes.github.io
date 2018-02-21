@@ -32,9 +32,10 @@ feature_row:
     btn_label: "Link"
 github:
 intro:
+  - excerpt: "\"Data, Science and Everything Nice.\"  
+  \n\nI am a Junior Data Scientist, documenting my projects through this blog."
+  - excerpt: 
   - excerpt: 'Click on the links below to check out some of my projects:'
-
-author_profile: true
 ---
 
 {% include feature_row id="intro" type="center" %}
