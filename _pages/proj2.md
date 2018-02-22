@@ -8,8 +8,6 @@ author_profile: true
 
 ### Regression and Classification with the Ames Housing Data
 
----
-
 <img src="/assets/images/proj2.jpg" width="100%">
 
 This project uses the [Ames housing data recently made available on kaggle](https://www.kaggle.com/c/house-prices-advanced-regression-techniques).  
@@ -24,7 +22,7 @@ Data Science often involves modelling and prediction based on a dataset. In this
 
 ## <img src="https://i.imgur.com/wLPdKgZ.png" style="float: left; height: 25px"> 1. Estimating the value of homes from fixed characteristics
 
----
+
 ### 1.1 Overview of dataset using pandas .describe()
 
 
@@ -109,7 +107,6 @@ nearZeroVariance(zerovartest)
 
 ## <img src="https://i.imgur.com/wLPdKgZ.png" style="float: left; height: 25px"> 2. Preparing your dataset for prediction/classification
 
----
 ### 2.1 Train-test split and normalisation
 Before running your model, it is important to split your data into train and test datasets. It is also important to normalise any data columns whenever necessary. In our case, we may use scikit-learn's __train-test split__ module to split our dataset; and its __StandardScaler__ module to normalise our data.
 
@@ -131,7 +128,6 @@ print np.mean(lasso_scores)
 
 ## <img src="https://i.imgur.com/wLPdKgZ.png" style="float: left; height: 25px"> 3. Model for regression
 
----
 ### 3.1 Lasso regression to predict house prices
 The lasso regression applies regularisation to data columns such that certain columns may not be as information to predict your variable of interest. This is particularly useful for datasets with large amounts of qualitative features.
 
@@ -314,7 +310,6 @@ lasso_coefs.head(20)
 
 ## <img src="https://i.imgur.com/wLPdKgZ.png" style="float: left; height: 25px"> 4. Classify records into abnormal or normal sale
 
----
 ### 4.1 Caveat: Imbalanced dataset
 In some cases, your dataset might present itself to be imbalanced. This has large implications towards the building of our models. In the case of classification, an over-representation of a particular class may skew the classification towards the majority class. To mitigate this problem, it is advisable to perform certain sampling techniques in order to balance out the classes.  
 
