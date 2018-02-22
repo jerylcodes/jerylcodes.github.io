@@ -1,5 +1,7 @@
 # main links
 main:
+  - title: "Capstone Project"
+    url: /capstone
   - title: "Project 1"
     url: /proj1
   - title: "Project 2"
