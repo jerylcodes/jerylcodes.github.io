@@ -6,7 +6,7 @@ author_profile: true
 ---
 ## Capstone Project: My Grocery Finder  (myGF)
 
-<img src="/cap/cap1.jpg" width="100%">
+<img src="/assets/images/cap1.jpg" width="100%">
 
 ## 1. Problem Statement
 
@@ -14,11 +14,11 @@ Do you ever remember times where you have spent a large amount of time finding a
 
 In today's technologial landscape, we are able to leverage techniques such as **deep learning** to easily classify images or even speech. For this use case, we will make use of **Convolutional Neural Networks** (CNN) and transfer learning to help with the classification of groceries. This can then add value to supermarkets in the form of helping grocers find their groceries in a shorter time. A proposal might be to add kiosks around the supermarket with the image classifer. Grocers will only need to scan a photo or image of their grocery and the kiosk will return the row and column locations of the particular grocery.
 
-<img src="/cap/cap2.jpg" width="100%">
+<img src="/assets/images/cap2.jpg" width="100%">
 Yay, candy can now be found easily!
 
 ### 1.1 Deep learning
-<img src="/cap/cap3.jpg" width="100%">
+<img src="/assets/images/cap3.jpg" width="100%">
 
 Deep Learning is a subfield of machine learning concerned with algorithms inspired by the structure and function of the brain called artificial neural networks. For humans, images are first processed by our eyes and the signal gets passed through a series of neurons before reaching our brain. Our brain then consolidates the image information and presents it in an understandble format for us.
 
@@ -34,14 +34,14 @@ CNN, in a nutshell, is made up of 4 main operations:
 3. Pooling or Sub Sampling
 4. Classification (Fully Connected Layer)
 
-<img src="/cap/cap4.jpg" width="100%">
+<img src="/assets/images/cap4.jpg" width="100%">
 
 #### 1.2.1 Convolution
 The reason why CNN are called as such is because of the Convolution function. Images are first processed into pixel values (red, green and blue colour in the range of 0 to 255 for each colour channel). Each image is simply converted into a matrix of numbers. 
 
 We will next define a matrix of 3x3 size with arbitrarily assigned weights to be used to slide across our image matrix. Dot products of the matrices will then be computed and this effectively reduces our original matrix into a feature map. The animation below explains how the convolution is performed and how the output is computed:
 
-<img src="/cap/cap5.jpg" width="100%"> 
+<img src="/assets/images/cap5.jpg" width="100%"> 
 
 Depending on the weights assigned, different feature maps will be obtained. These feature maps will then be used to classify our images.
 
@@ -51,13 +51,13 @@ An additional operation called ReLU has been used after every Convolution operat
 
 ReLU is an element wise operation (applied per pixel) and replaces all negative pixel values in the feature map by zero. The purpose of ReLU is to introduce non-linearity in our ConvNet. We would use ReLU for images as real world images consist of mostly non-linear features. The figure below illustrates the effect of ReLU activation on a processed image.
 
-<img src="/cap/cap6.jpg" width="100%">
+<img src="/assets/images/cap6.jpg" width="100%">
 
 #### 1.2.3 Pooling
 
 Image matrices tend to be large. We would often apply pooling techniques to reduce the dimension of our feature maps. Max pooling is the typical pooling method we would use. In max pooling, we will first set a window (2x2 in this case) to slide through our feature map. Max pooling will take only the largest element for every step. Visually, the figure below shows how max pooling is performed:
 
-<img src="/cap/cap7.jpg" width="100%">
+<img src="/assets/images/cap7.jpg" width="100%">
 
 #### 1.2.4 Fully Connected Layer
 The Fully Connected layer is a traditional Multi Layer Perceptron that uses a softmax activation function in the output layer. The term “Fully Connected” implies that every neuron in the previous layer is connected to every neuron on the next layer. The softmax activation function helps to reassign the computed values such that it adds up to 1, while highlighting the max value.  
@@ -92,7 +92,7 @@ The above steps train the ConvNet – this essentially means that all the weight
 
 Visually, the training and the architecture of the ConvNet are as such:
 
-<img src="/cap/cap8.jpg" width="100%">
+<img src="/assets/images/cap8.jpg" width="100%">
 
 ## 2. Dataset
 The dataset used for this project is the GroZi-120 database from the University of California, San Diego. [Link to dataset](http://grozi.calit2.net/grozi.html). The database consists of photographs (training set) / google images of groceries. We will be building a ConvNet to classify 17 grocery items:
@@ -114,7 +114,7 @@ The dataset used for this project is the GroZi-120 database from the University 
 16. Rockstar beer
 17. Nestle crunch
 
-<img src="/cap/cap9.jpg" width="100%">
+<img src="/assets/images/cap9.jpg" width="100%">
 
 ### Packages used
 1. pandas
@@ -284,7 +284,7 @@ After reading in the images into matrices. The matrix is shuffled records-wise t
 
 ## 4. Building CovnNet using Keras tensorflow
 
-A simple keras image classification workflow in python can be adapted from this github: https://github.com/anujshah1003/own_data_cnn_implementation_keras
+A simple keras image classification workflow in python can be adapted from this github: [https://github.com/anujshah1003/own_data_cnn_implementation_keras](https://github.com/anujshah1003/own_data_cnn_implementation_keras)
 
 ### 4.1 Defining the ConvNet model architecture
  
@@ -2743,11 +2743,11 @@ plt.figure()
 
 ## 6. Transfer learning
 
-Source: https://codelabs.developers.google.com/codelabs/tensorflow-for-poets/
+Source: [https://codelabs.developers.google.com/codelabs/tensorflow-for-poets/](https://codelabs.developers.google.com/codelabs/tensorflow-for-poets/)
 
 Transfer learning is the process of utilising knowledge from a particular task/domain to model for another task/domain.  
 
-<img src="/cap/cap10.jpg" width="100%">
+<img src="/assets/images/cap10.jpg" width="100%">
 
 One approach of transfer learning is the use of pre-trained model. In this capstone project, we will utilise Google's mobilenet ConvNet model and retrain the last layer of the model to classify our 17 groceries. 
 
