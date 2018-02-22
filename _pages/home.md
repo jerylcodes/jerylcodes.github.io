@@ -13,7 +13,7 @@ feature_row:
     alt: "Capstone Project"
     title: "Capstone Project"
     excerpt: "In the capstone project, an image classifier is built to classify grocery images. The outputs of the classifier can be integrated in customer service kiosks, warehouse systems and even online grocery platforms.<br> <br><br>"
-    url: "/proj1"
+    url: "/capstone"
     btn_class: "btn--primary"
     btn_label: "Link"
   - image_path: /assets/images/eda.jpg
