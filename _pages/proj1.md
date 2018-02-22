@@ -217,7 +217,6 @@ The sat scores contain 4 columns of information :
 
 ## <img src="https://i.imgur.com/wLPdKgZ.png" style="float: left; height: 25px"> 2. Plot the data using seaborn
 
----
 
 ### 2.1 Using seaborn's `distplot`, plot the distributions for each of `Rate`, `Math`, and `Verbal`
 
@@ -280,8 +279,6 @@ From plots (row 2, plot 3 and row 3, plot 2), as either variable increases, the 
 
 ## <img src="https://i.imgur.com/wLPdKgZ.png" style="float: left; height: 25px"> 3. Plot the data using built-in pandas functions.
 
----
-
 ### 3.1 Plot a stacked histogram with `Verbal` and `Math` using pandas
 
 
@@ -323,7 +320,6 @@ datanormp = datanorm.sort_values(by=['Verbaln','Mathn']).plot(kind='box', y=['Ve
 
 
 ## <img src="https://i.imgur.com/wLPdKgZ.png" style="float: left; height: 25px"> 4. Examine summary statistics
----
 
 Checking the summary statistics! Correlation matrices give a one stop view of how variables are related linearly to each other.
 
@@ -475,7 +471,6 @@ datasat.cov()
 
 ## <img src="https://i.imgur.com/wLPdKgZ.png" style="float: left; height: 25px"> 5. Performing EDA on "drug use by age" data.
 
----
 
 ### 5.1 EDA involves the cleaning of data, checking for null values, data types etc.
 
@@ -685,7 +680,6 @@ ax.set(xticklabels=['Non-minor (>21 y.o.)', 'Minor (<=21 y.o.)'], title='Box Plo
 
 ## <img src="https://i.imgur.com/wLPdKgZ.png" style="float: left; height: 25px"> 6. Introduction to dealing with outliers
 
----
 
 Rate does not seem to have outliers since it is a percentage range and most values fall between 1 to 100.
 
