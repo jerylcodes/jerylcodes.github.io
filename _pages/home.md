@@ -9,6 +9,13 @@ header:
   caption: 
 excerpt: '\"Data, Science and Everything Nice.\"'
 feature_row:
+  - image_path: /assets/images/capsplash.jpg
+    alt: "Capstone Project"
+    title: "Capstone Project"
+    excerpt: "In the capstone project, an image classifier is built to classify grocery images. The outputs of the classifier can be integrated in customer service kiosks, warehouse systems and even online grocery platforms.<br> <br><br>"
+    url: "/proj1"
+    btn_class: "btn--primary"
+    btn_label: "Link"
   - image_path: /assets/images/eda.jpg
     alt: "Exploratory Data Analysis"
     title: "Project 1: Exploratory Data Analysis"
@@ -30,7 +37,7 @@ feature_row:
     url: "/proj3"
     btn_class: "btn--primary"
     btn_label: "Link"
-github:
+github: /jerylcodes
 intro:
 ---
 
