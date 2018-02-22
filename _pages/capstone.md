@@ -4,7 +4,7 @@ permalink: capstone/
 title: &title "Capstone Project"
 author_profile: true
 ---
-## Capstone Project: My Grocery Finder  (myGF)
+## My Grocery Finder  (myGF)
 
 <img src="/assets/images/cap1.jpg" width="100%">
 
