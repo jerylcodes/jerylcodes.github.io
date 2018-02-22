@@ -7,6 +7,7 @@ author_profile: true
 <img src="https://i.imgur.com/RDye8eA.png" style="float: left; margin: 15px; height: 80px">
 
 ### Regression and Classification with the Ames Housing Data
+---
 
 <img src="/assets/images/proj2.jpg" width="100%">
 

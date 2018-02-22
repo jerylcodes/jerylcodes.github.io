@@ -33,7 +33,6 @@ Source: Transformation - Building a Data Science Capability
 
 ## <img src="https://i.imgur.com/wLPdKgZ.png" style="float: left; height: 25px"> 1. Load the `sat_scores.csv` dataset and describe it
 
----
 ### 1.1 Describing dataset using pandas .describe() and .info()
 
 
