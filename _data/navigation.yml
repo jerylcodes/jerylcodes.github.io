@@ -8,6 +8,8 @@ main:
     url: /proj2
   - title: "Project 3"
     url: /proj3
+  - title: "Contact-Me"
+    url: /contact
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"
