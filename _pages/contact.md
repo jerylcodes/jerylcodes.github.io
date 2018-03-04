@@ -6,6 +6,7 @@ permalink: contact/
 <img src="/assets/images/contact.jpg" width="100%">
 
 Thank you for visiting my github pages.  
+  
 I am currently seeking opportunities to work as a junior data scientist / consultant. Please visit my linkedin page for more information:  
 [https://www.linkedin.com/in/jeryl-ong](https://www.linkedin.com/in/jeryl-ong)  
 
