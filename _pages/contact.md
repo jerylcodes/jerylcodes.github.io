@@ -4,7 +4,7 @@ permalink: contact/
 ---
 
 <img src="/assets/images/contact.jpg" width="100%">
-<form action="//formspree.io/jerylong1990@email.com" method="POST">
+<form action="//formspree.io/jerylong1990@gmail.com" method="POST">
 	Name:
     <input type="text" name="name">
     Email:
