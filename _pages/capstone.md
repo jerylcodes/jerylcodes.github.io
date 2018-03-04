@@ -906,7 +906,7 @@ In my personal opinion, I would advise businesses to take a look at their datase
 - Full control of hyper-parameters
 - Full control of trainable features, depth and complexity of the model  
 
-**2.  Transfer learning **
+**2. Transfer learning**
 - Easy to apply
 - Models from different domains may be applicable to business use cases from differing domains
 
