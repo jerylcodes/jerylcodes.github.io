@@ -1,6 +1,6 @@
 ---
 layout: default
-permalink: /contact
+permalink: contact/
 header:
   overlay_image: /assets/images/contact.jpg
   cta_label: 
