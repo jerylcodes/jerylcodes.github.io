@@ -457,11 +457,11 @@ We chose the model weights at epoch 202 as it is the best balance between loss a
 
 ### 5.3 Classification report
 
-<img src="https://github.com/jerylcodes/jerylcodes.github.io/blob/master/assets/images/kerasclass.JPG" width="100%">
+<img src="https://raw.githubusercontent.com/jerylcodes/jerylcodes.github.io/master/assets/images/kerasclass.JPG" width="100%">
 
 ### 5.4 Confusion matrix
 
-<img src="https://github.com/jerylcodes/jerylcodes.github.io/blob/master/assets/images/kerascm.JPG" width="100%">
+<img src="https://raw.githubusercontent.com/jerylcodes/jerylcodes.github.io/master/assets/images/kerascm.JPG" width="100%">
 
 
 ## 6. Transfer learning
@@ -577,10 +577,10 @@ output_layer = "final_result"
 
 ### 6.3 Results
 ### Classification Report
-<img src="https://github.com/jerylcodes/jerylcodes.github.io/blob/master/assets/images/tfclass.JPG" width="100%">
+<img src="https://raw.githubusercontent.com/jerylcodes/jerylcodes.github.io/master/assets/images/tfclass.JPG" width="100%">
 
 ### Confusion Matrix
-<img src="https://github.com/jerylcodes/jerylcodes.github.io/blob/master/assets/images/tfcm.JPG" width="100%">
+<img src="https://raw.githubusercontent.com/jerylcodes/jerylcodes.github.io/master/assets/images/tfcm.JPG" width="100%">
 
 ## 7. Insights
 1. Comparison between Transfer Learning and Keras  
