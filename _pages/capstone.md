@@ -451,228 +451,17 @@ plt.savefig('dropall2.jpeg')
 ### 5.2 Model Evaluation
 Our objective is to predict a class of grocery from its google images. We would thus, in the google images for model evaluation.  
 
-We chose the model weights at epoch 192 as it is the best balance between loss and accuracy (i.e, the model is not overfitted to the training dataset).
+We chose the model weights at epoch 202 as it is the best balance between loss and accuracy (i.e, the model is not overfitted to the training dataset).
 
 
-```python
-# Loading model weights for best epoch , epoch = 192
 
-from keras.models import load_model
-loaded_model = load_model('./Weights drop all/Best-weights-my_model-192-0.0122-0.9962.hdf5')
-```
+### 5.3 Classification report
 
+<img src="/assets/images/kerasclass.jpg" width="100%">
 
-```python
-# loading in google images for evaluation
+### 5.4 Confusion matrix
 
-with open('X_test', 'rb') as file:
-    X_goog = pickle.load(file)
-    
-with open('y_test', 'rb') as file:
-    y_goog = pickle.load(file)
-    
-Y_goog = np_utils.to_categorical(y_goog, num_classes=17)
-del y_goog
-```
-
-
-```python
-# Evaluating the model
-
-score = loaded_model.evaluate(X_goog, Y_goog, verbose=0)
-print('Test Loss:', score[0])
-print('Test accuracy:', score[1])
-```
-
-    Test Loss: 11.1707546597
-    Test accuracy: 0.27380952381
-    
-
-### 5.3 Prediction for single image
-
-
-```python
-test_image = X_goog[55:56]
-print (test_image.shape)
-
-print(loaded_model.predict(test_image))
-print(loaded_model.predict_classes(test_image))
-print(Y_goog[55:56])
-```
-
-    (1, 128, 128, 3)
-    [[  7.07963762e-25   1.22613013e-23   1.28087523e-11   2.65117538e-25
-        1.28524820e-15   6.45168437e-20   3.22915257e-05   1.15314463e-22
-        3.21261240e-10   4.87621282e-13   8.21023602e-25   9.99967694e-01
-        2.59368519e-18   7.71639835e-24   1.19169067e-19   2.45650432e-18
-        9.95940492e-15]]
-    [11]
-    [[ 0.  0.  0.  0.  0.  0.  0.  1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]]
-    
-
-### 5.4 Classification report
-
-
-```python
-# Printing the confusion matrix
-from sklearn.metrics import classification_report,confusion_matrix
-import itertools
-
-Y_pred = loaded_model.predict(X_goog)
-print(Y_pred)
-y_pred = np.argmax(Y_pred, axis=1)
-print(y_pred)
-#y_pred = model.predict_classes(X_test)
-#print(y_pred)
-target_names = ['class ' + str(x) for x in range(17)]
-
-print(classification_report(np.argmax(Y_goog,axis=1), y_pred,target_names=target_names))
-
-print(confusion_matrix(np.argmax(Y_goog,axis=1), y_pred))
-```
-
-    [[  5.50455093e-20   1.54064732e-20   5.34174083e-09 ...,   4.82381376e-18
-        9.43111041e-13   2.02346855e-11]
-     [  1.52494886e-26   8.91189126e-28   1.00000000e+00 ...,   0.00000000e+00
-        1.15320039e-28   2.30504217e-21]
-     [  6.52397731e-25   1.78571223e-27   5.62543276e-11 ...,   4.12841724e-21
-        2.63043993e-18   8.60820570e-09]
-     ..., 
-     [  0.00000000e+00   2.85461656e-31   6.62725711e-07 ...,   0.00000000e+00
-        0.00000000e+00   4.25602387e-33]
-     [  0.00000000e+00   0.00000000e+00   1.65890033e-34 ...,   0.00000000e+00
-        0.00000000e+00   0.00000000e+00]
-     [  0.00000000e+00   0.00000000e+00   1.42537870e-10 ...,   0.00000000e+00
-        0.00000000e+00   5.32648744e-25]]
-    [ 6  2  6  6  9  9  4  9  9 11 11 11 11 11  6  6  6  6  6  6  6  6  6 15 15
-     13 11  5  5  5  5  5  5  5 11  6  6  5  5  5  5  5  5  5  5 11  6 11  9  6
-      6  9 11 11 11 11 11 11 11 11  6  4  6 11 11 12 15 11 13 11 13 11 11 11  9
-     11  9  9  4  9  6  4  9  4]
-                 precision    recall  f1-score   support
-    
-        class 0       0.00      0.00      0.00         7
-        class 1       0.00      0.00      0.00         6
-        class 2       0.00      0.00      0.00         7
-        class 3       0.00      0.00      0.00         7
-        class 4       0.20      0.20      0.20         5
-        class 5       0.53      1.00      0.70         8
-        class 6       0.35      1.00      0.52         7
-        class 7       0.00      0.00      0.00         6
-        class 8       0.00      0.00      0.00         4
-        class 9       0.00      0.00      0.00         5
-       class 10       0.00      0.00      0.00         3
-       class 11       0.20      1.00      0.33         5
-       class 12       0.00      0.00      0.00         2
-       class 13       0.00      0.00      0.00         3
-       class 14       0.00      0.00      0.00         2
-       class 15       0.67      0.50      0.57         4
-       class 16       0.00      0.00      0.00         3
-    
-    avg / total       0.14      0.27      0.17        84
-    
-    [[0 0 0 0 0 7 0 0 0 0 0 0 0 0 0 0 0]
-     [0 0 0 0 0 0 0 0 0 2 0 4 0 0 0 0 0]
-     [0 0 0 0 3 0 1 0 0 3 0 0 0 0 0 0 0]
-     [0 0 0 0 0 0 3 0 0 2 0 2 0 0 0 0 0]
-     [0 0 0 0 1 0 0 0 0 4 0 0 0 0 0 0 0]
-     [0 0 0 0 0 8 0 0 0 0 0 0 0 0 0 0 0]
-     [0 0 0 0 0 0 7 0 0 0 0 0 0 0 0 0 0]
-     [0 0 0 0 0 0 0 0 0 0 0 6 0 0 0 0 0]
-     [0 0 1 0 0 0 3 0 0 0 0 0 0 0 0 0 0]
-     [0 0 0 0 0 0 0 0 0 0 0 2 0 2 0 1 0]
-     [0 0 0 0 0 0 2 0 0 0 0 1 0 0 0 0 0]
-     [0 0 0 0 0 0 0 0 0 0 0 5 0 0 0 0 0]
-     [0 0 0 0 0 0 2 0 0 0 0 0 0 0 0 0 0]
-     [0 0 0 0 1 0 2 0 0 0 0 0 0 0 0 0 0]
-     [0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0]
-     [0 0 0 0 0 0 0 0 0 0 0 1 0 1 0 2 0]
-     [0 0 0 0 0 0 0 0 0 0 0 2 1 0 0 0 0]]
-    
-### 5.5 Confusion matrix
-
-
-```python
-# Plotting the confusion matrix
-def plot_confusion_matrix(cm, classes,
-                          normalize=False,
-                          title='Confusion matrix',
-                          cmap=plt.cm.Blues):
-    """
-    This function prints and plots the confusion matrix.
-    Normalization can be applied by setting `normalize=True`.
-    """
-    plt.imshow(cm, interpolation='nearest', cmap=cmap)
-    plt.title(title)
-    plt.colorbar()
-    tick_marks = np.arange(len(classes))
-    plt.xticks(tick_marks, classes, rotation=45)
-    plt.yticks(tick_marks, classes)
-
-    if normalize:
-        cm = cm.astype('float') / cm.sum(axis=1)[:, np.newaxis]
-        print("Normalized confusion matrix")
-    else:
-        print('Confusion matrix, without normalization')
-
-    print(cm)
-
-    thresh = cm.max() / 2.
-    for i, j in itertools.product(range(cm.shape[0]), range(cm.shape[1])):
-        plt.text(j, i, cm[i, j],
-                 horizontalalignment="center",
-                 color="white" if cm[i, j] > thresh else "black")
-
-    plt.tight_layout()
-    plt.ylabel('True label')
-    plt.xlabel('Predicted label')
-    plt.savefig('conf_mat.jpg')
-```
-
-
-```python
-# Compute confusion matrix
-cnf_matrix = (confusion_matrix(np.argmax(Y_goog,axis=1), y_pred))
-
-np.set_printoptions(precision=2)
-
-plt.figure()
-```
-
-```python
-plt.figure(figsize=(20,10))
-# Plot non-normalized confusion matrix
-plot_confusion_matrix(cnf_matrix, classes=target_names,
-                      title='Confusion matrix')
-plt.figure()
-
-# Plot normalized confusion matrix
-# plot_confusion_matrix(cnf_matrix, classes=target_names, normalize=True,
-#                      title='Normalized confusion matrix')
-# plt.figure()
-# plt.show()
-```
-
-    Confusion matrix, without normalization
-    [[0 0 0 0 0 7 0 0 0 0 0 0 0 0 0 0 0]
-     [0 0 0 0 0 0 0 0 0 2 0 4 0 0 0 0 0]
-     [0 0 0 0 3 0 1 0 0 3 0 0 0 0 0 0 0]
-     [0 0 0 0 0 0 3 0 0 2 0 2 0 0 0 0 0]
-     [0 0 0 0 1 0 0 0 0 4 0 0 0 0 0 0 0]
-     [0 0 0 0 0 8 0 0 0 0 0 0 0 0 0 0 0]
-     [0 0 0 0 0 0 7 0 0 0 0 0 0 0 0 0 0]
-     [0 0 0 0 0 0 0 0 0 0 0 6 0 0 0 0 0]
-     [0 0 1 0 0 0 3 0 0 0 0 0 0 0 0 0 0]
-     [0 0 0 0 0 0 0 0 0 0 0 2 0 2 0 1 0]
-     [0 0 0 0 0 0 2 0 0 0 0 1 0 0 0 0 0]
-     [0 0 0 0 0 0 0 0 0 0 0 5 0 0 0 0 0]
-     [0 0 0 0 0 0 2 0 0 0 0 0 0 0 0 0 0]
-     [0 0 0 0 1 0 2 0 0 0 0 0 0 0 0 0 0]
-     [0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0]
-     [0 0 0 0 0 0 0 0 0 0 0 1 0 1 0 2 0]
-     [0 0 0 0 0 0 0 0 0 0 0 2 1 0 0 0 0]]
-    
-
-![png](cap/output_22_2.png)
+<img src="/assets/images/kerascm.jpg" width="100%">
 
 
 ## 6. Transfer learning
@@ -786,130 +575,35 @@ input_layer = "input"
 output_layer = "final_result"
 ```
 
-### 7.1 Classifying image #1, class 0
+### 6.3 Results
+### Classification Report
+<img src="/assets/images/tfclass.jpg" width="100%">
 
+### Confusion Matrix
+<img src="/assets/images/tfcm.jpg" width="100%">
 
-```python
-file_name= '../tensorflow-for-poets-2/tf_files/augment/class0.jpg'
-t = read_tensor_from_image_file(
-      file_name,
-      input_height=input_height,
-      input_width=input_width,
-      input_mean=input_mean,
-      input_std=input_std)
+## 7. Insights
+1. Comparison between Transfer Learning and Keras  
+    - Keras acheived an overall precision of 0.84 and recall of 0.58 as compared to the Transfer Learning model with an overall precision of 0.40 and recall of 0.49. 2 points can be discussed here. Point 1 being, as the support for grocery is low (about 5-6 images per grocery for classification), the recall will naturally be skewed greatly if 1 of 5 items is misclassified.    
+    - To circumvent this, I suggest that we collect more data for the classification before proceeding to compute the confusion matrix and classification report.  
+    - Also, for point 2, the transfer learning model only achieved ~ 0.4 precision and recall, which may be an indication that the model still has room for training. Since the number of iterations is only at 500, I suggest that we can retrain the model with more iterations (for example, 2000-5000 iterations). However, it must be performed with caution to prevent overfitting.  
+    
+2. Business use case
+    Both the Transfer Learning model and Keras model have their pros and cons. Some of their advantages are as follows: 
 
-input_name = "import/" + input_layer
-output_name = "import/" + output_layer
-input_operation = graph.get_operation_by_name(input_name)
-output_operation = graph.get_operation_by_name(output_name)
+2.1 ** Keras **
+    - Full control of hyper-parameters
+    - Full control of trainable features, depth and complexity of the model  
 
-with tf.Session(graph=graph) as sess:
-    results = sess.run(output_operation.outputs[0], {
-        input_operation.outputs[0]: t
-    })
-    results = np.squeeze(results)
+2.2 ** Transfer learning **
+    - Easy to apply
+    - Models from different domains may be applicable to business use cases from differing domains  
+    
+   From a business perspective, it is important to consider whether there is sufficient time to develop the model, or whether accuracy is preferred over speed and utility.
+    
+3. ** Other models **
+    Support Vector Machines, Fuzzy measures and Genetic Algorithms exist to classify images. But due to the time constraints of the capstone project, we are only able to explore deep learning, which is by far, out performing the other algorithms according to various research papers. It is still important to give the other models a try for a more in-depth comparison.
 
-top_k = results.argsort()[-5:][::-1]
-
-for i in top_k:
-    print(labels[i], results[i])
-```
-
-    11 0.68615
-    10 0.119967
-    5 0.103596
-    16 0.0839199
-    14 0.00328049
-
-
-### 7.2 Classifying image #2, class 5
-
-
-```python
-file_name= '../tensorflow-for-poets-2/tf_files/augment/class5.jpg'
-t = read_tensor_from_image_file(
-      file_name,
-      input_height=input_height,
-      input_width=input_width,
-      input_mean=input_mean,
-      input_std=input_std)
-
-input_name = "import/" + input_layer
-output_name = "import/" + output_layer
-input_operation = graph.get_operation_by_name(input_name)
-output_operation = graph.get_operation_by_name(output_name)
-
-with tf.Session(graph=graph) as sess:
-    results = sess.run(output_operation.outputs[0], {
-        input_operation.outputs[0]: t
-    })
-    results = np.squeeze(results)
-
-top_k = results.argsort()[-5:][::-1]
-
-for i in top_k:
-    print(labels[i], results[i])
-```
-
-    5 0.982893
-    14 0.00429732
-    12 0.00390242
-    10 0.00373618
-    11 0.00329298
-
-
-### 7.3 Classifying image #3, class 3
-
-
-```python
-file_name= '../tensorflow-for-poets-2/tf_files/augment/class3.jpg'
-t = read_tensor_from_image_file(
-      file_name,
-      input_height=input_height,
-      input_width=input_width,
-      input_mean=input_mean,
-      input_std=input_std)
-
-input_name = "import/" + input_layer
-output_name = "import/" + output_layer
-input_operation = graph.get_operation_by_name(input_name)
-output_operation = graph.get_operation_by_name(output_name)
-
-with tf.Session(graph=graph) as sess:
-    results = sess.run(output_operation.outputs[0], {
-        input_operation.outputs[0]: t
-    })
-    results = np.squeeze(results)
-
-top_k = results.argsort()[-5:][::-1]
-
-for i in top_k:
-    print(labels[i], results[i])
-```
-
-    10 0.450499
-    11 0.270105
-    13 0.13487
-    15 0.0740191
-    16 0.0211695
-
-
-## Summary
-Image classification using deep learning can have significant impacts on society. In order to build a successful image classifier, we would need to establish a robust model for classification. The robustness of the model can be tweaked by the various hyper-parameters in the particular model of choice.  
-
-In this project, we have explored using the vanilla ConvNet architecture as well as a pre-trained ConvNet architecture made available by Google through transfer learning. In the vanilla ConvNet architecture, we have seen how we could tweak the architecture based on our preferences. On the other hand, we have also observed from transfer learning, the ease at which businesses can employ pre-existing models to help with their image classification problems.  
-
-In my personal opinion, I would advise businesses to take a look at their dataset before considering to build their own model for classification. Businesses can then pick and choose their best model based on their needs. Here are some advantages of both methods:  
-  
-  
-**1. Build ConvNet from scratch**
-- Full control of hyper-parameters
-- Full control of trainable features, depth and complexity of the model  
-
-**2. Transfer learning**
-- Easy to apply
-- Models from different domains may be applicable to business use cases from differing domains
-
-## Future work
+## 8. Future work
 1. Explore other techniques to classify images: Support Vector Machines, Fuzzy measures and Genetic Algorithms
 2. Build application for image classification
